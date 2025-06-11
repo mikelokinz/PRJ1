@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>IT Company Workers</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background: linear-gradient(to bottom, #f2e6d9, #d9cbb3);
+      padding: 40px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #5c3a21;
+      margin-bottom: 30px;
+    }
+
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .card {
+      position: relative;
+      width: 200px;
+      height: 60px;
+      background-color: #fff8f0;
+      border: 1px solid #c4a484;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      padding: 15px;
+      text-align: center;
+      color: #5c3a21;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .card:hover {
+      background-color: #f2e6d9;
+    }
+
+    .details {
+      position: absolute;
+      top: 70px;
+      left: 0;
+      width: 100%;
+      background-color: #fffaf5;
+      border: 1px solid #c4a484;
+      border-radius: 10px;
+      padding: 10px;
+      font-size: 14px;
+      color: #5c3a21;
+      opacity: 0;
+      pointer-events: none;
+      transition: all 0.4s ease;
+      transform: translateY(-10px);
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+      z-index: 1;
+    }
+
+    .card:hover .details {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Our Team</h1>
+
+  <div class="card-container">
+    <div class="card">
+      Aarav Mehta
+      <div class="details">
+        Frontend Engineer<br>
+        Development Dept.<br>
+        aarav@company.com
+      </div>
+    </div>
+    <div class="card">
+      Ishita Rao
+      <div class="details">
+        Backend Developer<br>
+        Development Dept.<br>
+        ishita@company.com
+      </div>
+    </div>
+    <div class="card">
+      Rahul Verma
+      <div class="details">
+        UI/UX Designer<br>
+        Design Dept.<br>
+        rahulv@company.com
+      </div>
+    </div>
+    <div class="card">
+      Neha Kapoor
+      <div class="details">
+        Test Engineer<br>
+        QA Dept.<br>
+        neha.k@company.com
+      </div>
+    </div>
+    <div class="card">
+      Devansh Iyer
+      <div class="details">
+        Cloud Engineer<br>
+        DevOps Dept.<br>
+        devansh@company.com
+      </div>
+    </div>
+    <div class="card">
+      Meera Nair
+      <div class="details">
+        Product Manager<br>
+        Product Dept.<br>
+        meera@company.com
+      </div>
+    </div>
+    <div class="card">
+      Karthik Menon
+      <div class="details">
+        Technical Support<br>
+        Support Dept.<br>
+        karthik@company.com
+      </div>
+    </div>
+    <div class="card">
+      Sanjana Das
+      <div class="details">
+        HR Executive<br>
+        HR Dept.<br>
+        sanjana@company.com
+      </div>
+    </div>
+    <div class="card">
+      Ritik Sharma
+      <div class="details">
+        Security Analyst<br>
+        Security Dept.<br>
+        ritik@company.com
+      </div>
+    </div>
+    <div class="card">
+      Anjali Singh
+      <div class="details">
+        SEO Specialist<br>
+        Marketing Dept.<br>
+        anjali@company.com
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
